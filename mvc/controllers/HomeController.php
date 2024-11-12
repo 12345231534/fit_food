@@ -20,7 +20,8 @@ class HomeController extends Controller{
         $data = [
             'page'          => 'home/index',
             'product'       => $products,
-            'data_collection'     => $data_collection
+            'data_collection'     => $data_collection,
+            
             // 'data_index'    => $data_index,
         ];
        $this->view('client/masterlayout',$data);

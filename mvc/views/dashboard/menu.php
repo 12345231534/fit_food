@@ -20,9 +20,9 @@
   <!-- Nav Item - Pages Collapse Menu -->
   <?php if (isset($_SESSION['isLogin_Admin']) && $_SESSION['isLogin_Admin'] == true) { ?>
   <li class="nav-item">
-    <a class="nav-link" href="index.php">
+    <a class="nav-link" href="dashboard">
       <i class="fas fa-fw fa-chart-area"></i>
-      <span>Trang chủ</span></a>
+      <span>Thống kê</span></a>
   </li>
   <?php } ?>
   <!-- Nav Item - Charts -->

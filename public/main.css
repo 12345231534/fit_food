@@ -1,0 +1,709 @@
+/*====================================================
+//  Helpers
+//====================================================*/
+
+.d-table-cell {
+  display: table-cell !important;
+}
+
+@media (min-width: 992px) {
+  .d-lg-flex {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+.align-middle {
+  vertical-align: middle !important;
+}
+
+/*====================================================
+//  Buttons
+//====================================================*/
+.btn {
+  -webkit-transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
+  -wekbit-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  display: inline-block;
+  margin: 0;
+  font-size: 18px;
+  padding: 15px 20px;
+  border: 0;
+  background: #000000;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-appearance: none;
+  line-height: 1em;
+  -webkit-transition: -webkit-box-shadow 250ms ease;
+  transition: box-shadow 250ms ease;
+  letter-spacing: 0.64px;
+}
+
+.btn,
+.btn:visited,
+.btn:active,
+.btn:focus {
+  color: white;
+}
+
+.btn:hover {
+  -webkit-transition: -webkit-box-shadow 250ms ease;
+  transition: box-shadow 250ms ease;
+}
+
+@media (min-width: 992px) {
+  .btn:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+.btn-responsive {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.btn-small {
+  padding: 10px 20px;
+}
+
+.btn-normal {
+  padding: 16px 20px;
+}
+
+.btn-big {
+  padding: 20px 20px;
+}
+
+.btn-min-width {
+  min-width: 140px;
+}
+
+.btn-min-width-ext {
+  min-width: 200px;
+}
+
+.btn-gray-fill {
+  background-color: #585757;
+  color: #ffffff;
+}
+
+.btn-gray-fill,
+.btn-gray-fill:visited,
+.btn-gray-fill:active,
+.btn-gray-fill:focus {
+  color: #ffffff;
+}
+
+.btn-gray-fill:hover {
+  background-color: #901d19;
+  color: #ffffff;
+}
+
+.btn-gray-fill:hover .btn-icon {
+  color: #ffffff;
+}
+
+.btn-gray-fill .btn-icon {
+  color: #ffffff;
+}
+
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Hidden helpers */
+.overflow {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+/*====================================================
+//  Common
+//====================================================*/
+* {
+  -webkit-transition: color 0.15s, background 0.15s, border 0.15s, opacity 0.15s;
+  transition: color 0.15s, background 0.15s, border 0.15s, opacity 0.15s;
+}
+
+*:after,
+*:before {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 310px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #eaf5ff;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+a:active,
+a:visited {
+  outline: none;
+}
+
+.a-hover:hover,
+.a-hover:focus {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*====================================================
+//  Content
+//====================================================*/
+section {
+  position: relative;
+  z-index: 2;
+  padding: 60px 20px 60px;
+}
+
+@media (max-width: 767px) {
+  section {
+    padding: 60px 20px 60px;
+  }
+}
+
+main {
+  position: relative;
+}
+
+.container-large {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container-large {
+    width: 730px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-large {
+    width: 950px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-large {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-large {
+    width: 1400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-large {
+    width: 100%;
+  }
+}
+
+/*====================================================
+//  Product
+//====================================================*/
+.product-item {
+  overflow: hidden;
+  background-color: #0e1015;
+  -webkit-transition: width 500ms ease, opacity 500ms ease;
+  transition: width 500ms ease, opacity 500ms ease;
+}
+
+.product-item:hover .product-btn {
+  background-color: #901d19;
+  color: #ffffff;
+}
+
+.product-item-ext {
+  background-color: #13151c;
+}
+
+.product-item.is-hovered {
+  -webkit-transition: width 500ms ease, opacity 500ms ease;
+  transition: width 500ms ease, opacity 500ms ease;
+}
+
+.product-item.is-hovered .product-overlay {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+.product-item.is-active {
+  width: 66%;
+  overflow: hidden;
+  -webkit-transition: width 500ms ease;
+  transition: width 500ms ease;
+}
+
+@media (max-width: 991px) {
+  .product-item.is-active {
+    width: 100%;
+  }
+}
+
+.product-item.is-active .product-content {
+  opacity: 1;
+  visibility: visible;
+  width: 930px;
+  height: auto;
+  padding: 70px 40px 0;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+@media (max-width: 1439px) {
+  .product-item.is-active .product-content {
+    width: 770px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .product-item.is-active .product-content {
+    width: 625px;
+    padding: 50px 20px 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .product-item.is-active .product-content {
+    width: 100%;
+    padding: 40px 20px 0;
+  }
+}
+
+.product-item.is-active .product-info {
+  display: none;
+}
+
+.product-item.is-inactive {
+  width: 17%;
+  cursor: pointer;
+  -webkit-transition: width 500ms ease;
+  transition: width 500ms ease;
+}
+
+@media (max-width: 991px) {
+  .product-item.is-inactive {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-item.is-inactive .product-info,
+  .product-item.is-inactive .product-text,
+  .product-item.is-inactive .product-description-title,
+  .product-item.is-inactive .product-status-text {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+  }
+  .product-item.is-inactive .product-overlay {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+  }
+  .product-item.is-inactive .product-content {
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 70px 40px 0;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+  }
+}
+
+.product-header {
+  position: relative;
+  cursor: pointer;
+}
+
+.product-content {
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  width: 930px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+@media (max-width: 1439px) {
+  .product-content {
+    width: 770px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .product-content {
+    width: 625px;
+  }
+}
+
+@media (max-width: 991px) {
+  .product-content {
+    width: 100%;
+  }
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+.product-image-block {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+@media (max-width: 991px) {
+  .product-image-block {
+    height: 250px;
+  }
+}
+
+@media (max-width: 479px) {
+  .product-image-block {
+    height: 200px;
+  }
+}
+
+.product-image {
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.product-number {
+  display: inline-block;
+  vertical-align: middle;
+  color: #0e1015;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  line-height: 0.8;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -3.5px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1439px) {
+  .product-number {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .product-number {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 479px) {
+  .product-number {
+    font-size: 50px;
+  }
+}
+
+.product-description {
+  display: block;
+  z-index: 2;
+}
+
+.product-description-title {
+  display: block;
+  position: relative;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  z-index: 2;
+  font-weight: 700;
+  line-height: 1.4;
+  font-family: "Montserrat", Arial, sans-serif;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+@media (max-width: 1439px) {
+  .product-description-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .product-description-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .product-description-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-description-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 479px) {
+  .product-description-title {
+    font-size: 20px;
+  }
+}
+
+.product-text-overlay {
+  position: absolute;
+  display: block;
+  top: 20px;
+  left: 50%;
+  text-align: center;
+  opacity: 0.05;
+  z-index: 0;
+  width: 100%;
+  color: #696969;
+  font-family: "Montserrat", sans-serif;
+  font-size: 240px;
+  font-weight: 400;
+  line-height: 0.8;
+  text-transform: uppercase;
+  letter-spacing: -2.47px;
+  overflow: hidden;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1439px) {
+  .product-text-overlay {
+    font-size: 200px;
+    top: 40px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .product-text-overlay {
+    font-size: 150px;
+  }
+}
+
+.product-status {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  padding: 0 20px;
+  width: 450px;
+}
+
+@media (max-width: 1199px) {
+  .product-status {
+    width: 340px;
+    bottom: -5px;
+  }
+}
+
+@media (max-width: 479px) {
+  .product-status {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.product-text {
+  text-align: center;
+  margin-bottom: 80px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+@media (max-width: 1199px) {
+  .product-text {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-text {
+    font-size: 16px;
+  }
+}
+
+.product-info {
+  text-align: center;
+  display: table;
+  height: 200px;
+  width: 100%;
+  padding: 0 25px;
+  -webkit-transition: opacity 500ms ease;
+  transition: opacity 500ms ease;
+}
+
+@media (max-width: 1199px) {
+  .product-info {
+    padding: 0 15px;
+  }
+}
+
+.product-status-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #0e1015;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1439px) {
+  .product-status-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .product-status-text {
+    font-size: 16px;
+  }
+}
+
+.product-title {
+  display: block;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .product-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 991px) {
+  .product-title {
+    font-size: 24px;
+  }
+}
