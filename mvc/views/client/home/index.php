@@ -9,83 +9,86 @@ require_once("banner.php")
 
 <!-- featured-products section end -->
 
-<div id="carouselExampleAutoplaying" class="carousel slide banner " data-bs-ride="carousel"   >
-  <div class="carousel-inner " style="max-height: fit-content; height: 90vh; ">
-    <div class="carousel-item active position-relative " style=" position: relative; padding-top:50% ">
+<div class="owl-carousel slider-1 owl-theme">
+    <div class="item active position-relative " style=" position: relative; padding-top:50% ">
         <img src="https://fitfood.vn/img/1920x800/images/nen-final-3-16947527108499.webp?f=jpg" class="d-block w-100" style="height:100%; position: absolute; inset: 0; object-fit: cover; object-position: 50% 50%;" alt="...">
         <div class="position-absolute  display-2 text-white" style="left: 50%; top:40%; transform: translate(-50% );  ">
             <p class="text-white text-center px-5" style="letter-spacing: 0.5em; transform: translateX(-8%) ;width: 120%; font-size: 20px;" >KẾ HOẠCH BỮA ĂN HÀNG TUẦN CHO</p>
-            <h1 class="text-white font-weight-bolder text-center  ">MỘT LỐI SỐNG LÀNH MẠNH</h1>
+            <h1 class="text-white font-weight-bolder text-center  " style="font-size: clamp(1rem, 2.5vw, 2rem); ">MỘT LỐI SỐNG LÀNH MẠNH</h1>
         </div>
     </div>
-    <div class="carousel-item  position-relative " style=" position: relative; padding-top:50% ">
+    <div class="item  position-relative " style=" position: relative; padding-top:50% ">
         <img src="https://fitfood.vn/img/1920x800/images/nen-final-1-1695095846415.webp?f=jpg" class="d-block w-100" style="height:100%; position: absolute; inset: 0; object-fit: cover; object-position: 50% 50%;" alt="...">
         <div class="position-absolute  display-2 text-white" style="left: 50%; top:40%; transform: translate(-50% );  ">
             <h1 class="text-white font-weight-bolder text-center text-uppercase ">Trải nghiệm bữa ăn sạch</h1>
             <p class="text-white text-center px-5 text-uppercase" style="letter-spacing: 0.5em; transform: translateX(-8%) ;width: 120%; font-size: 20px;" >tươi ngon giàu dinh dưỡng</p>
         </div>
     </div>
-    <div class="carousel-item  position-relative " style=" position: relative; padding-top:50% ">
+    <div class="item  position-relative " style=" position: relative; padding-top:50% ">
         <img src="https://fitfood.vn/img/1920x800/images/nen-final-2-16947528537416.webp?f=jpg" class="d-block w-100" style="height:100%; position: absolute; inset: 0; object-fit: cover; object-position: 50% 50%;" alt="...">
         <div class="position-absolute  display-2 text-white" style="left: 50%; top:40%; transform: translate(-50% );  ">
             <p class="text-uppercase text-text-uppercase text-white text-center px-5" style="letter-spacing: 0.5em; transform: translateX(-8%) ;width: 120%; font-size: 20px;" >Nhà cung cấp bữa ăn sạch</p>
             <h1 class="text-white font-weight-bolder text-center  ">lớn nhất Sài Gòn</h1>
         </div>
     </div>
-    <div class="carousel-item  position-relative " style=" position: relative; padding-top:50% ">
+    <div class="item  position-relative " style=" position: relative; padding-top:50% ">
         <img src="https://fitfood.vn/img/1920x800/images/nen-web-16950958311174.webp?f=jpg" class="d-block w-100" style="height:100%; position: absolute; inset: 0; object-fit: cover; object-position: 50% 50%;" alt="...">
         <div class="position-absolute  display-2 text-white" style="left: 50%; top:40%; transform: translate(-50% );  ">
             <h1 class=" text-uppercase text-white font-weight-bolder text-center  ">Giải pháp HEALTHY FOOD</h1>
             <p class="text-uppercase text-white text-center px-5" style="letter-spacing: 0.5em; transform: translateX(-8%) ;width: 120%; font-size: 20px;" >giao tận nơi</p>
         </div>
     </div>
-   
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
 <section>
     <div class="container ">
-        <div class="text-center">
-            <h1>Danh mục món ăn</h1>
+        <div class="text-center " >
+            <p class=" font-weight-bolder text-black display-6 pb-4" style="font-family: Faculty Glyphic;">Danh mục món ăn</p>
         </div>
         <div class="row">
-            <div class=" col-md-4 mb-4 zoom-in catergory ">
-                <img src="https://lacbuu.com/wp-content/uploads/2024/06/sup-bao-ngu-vi-ca-gia-bao-nhieu.jpg" alt="">
+            <div class=" col-md-4 mb-4 catergory  ">
+                <a href="product">
+                    <div class="w-100 overflow-hidden" style="border-radius: 12px;">
+                        <img class="zoom-in " src="https://lacbuu.com/wp-content/uploads/2024/06/sup-bao-ngu-vi-ca-gia-bao-nhieu.jpg" alt="">
+                    </div>
+                </a>
+                
                 <div class="py-3 font-weight-bolder text-black display-6" style="font-family: Faculty Glyphic;">Súp bào ngư</div>
-                <p>Không dùng chung với gừng, hành lá. Dùng thong thả, từ từ để cảm nhận mùi thơm của cốm non trong từng muỗng cháo.</p>   
+                <p>2 cách thưởng thức, trải nghiệm 2 mùi vị khác nhau trong cùng 1 thố súp</p>   
             </div>
-            
-            <div class=" col-md-4 mb-4 zoom-in catergory">
-                <img src="https://lacbuu.com/wp-content/uploads/2024/06/sup-bao-ngu-vi-ca-gia-bao-nhieu.jpg" alt="">
+            <div class=" col-md-4 mb-4 catergory  ">
+                <div class="w-100 overflow-hidden" style="border-radius: 12px;">
+                    <img class="zoom-in " src="https://lacbuu.com/wp-content/uploads/2022/11/chao-yen-bao-ngu-lon-768x768.jpg" alt="">
+                </div>
                 <div class="py-3 font-weight-bolder text-black display-6" style="font-family: Faculty Glyphic;">Món cháo</div>
                 <p>Không dùng chung với gừng, hành lá. Dùng thong thả, từ từ để cảm nhận mùi thơm của cốm non trong từng muỗng cháo.</p>   
             </div>
-            <div class=" col-md-4 mb-4 zoom-in catergory">
-                <img src="https://lacbuu.com/wp-content/uploads/2024/06/sup-bao-ngu-vi-ca-gia-bao-nhieu.jpg" alt="">
+            <div class=" col-md-4 mb-4 catergory  ">
+                <div class="w-100 overflow-hidden" style="border-radius: 12px;">
+                    <img class="zoom-in " src="https://lacbuu.com/wp-content/uploads/2021/10/Ga-Ac-Tiem-thuoc-bac-5-768x768.jpg" alt="">
+                </div>
                 <div class="py-3 font-weight-bolder text-black display-6" style="font-family: Faculty Glyphic;">Món tiềm</div>
-                <p>Không dùng chung với gừng, hành lá. Dùng thong thả, từ từ để cảm nhận mùi thơm của cốm non trong từng muỗng cháo.</p>   
+                <p>Gà ác tiềm thuốc bắc mùi dịu nhẹ. rất dễ ăn</p>   
             </div>
-            <div class=" col-md-4 mb-4 zoom-in catergory">
-                <img src="https://lacbuu.com/wp-content/uploads/2024/06/sup-bao-ngu-vi-ca-gia-bao-nhieu.jpg" alt="">
+            <div class=" col-md-4 mb-4 catergory  ">
+                <div class="w-100 overflow-hidden" style="border-radius: 12px;">
+                    <img class="zoom-in " src="https://lacbuu.com/wp-content/uploads/2024/04/yen-chuong-duong-phen.jpg" alt="">
+                </div>
                 <div class="py-3 font-weight-bolder text-black display-6" style="font-family: Faculty Glyphic;">Yến chưng tươi</div>
-                <p>Không dùng chung với gừng, hành lá. Dùng thong thả, từ từ để cảm nhận mùi thơm của cốm non trong từng muỗng cháo.</p>   
+                <p>Nguyên chất 100%, chưng yến giao nóng sau khi đặt món.</p>   
             </div>
-            <div class=" col-md-4 mb-4 zoom-in catergory">
-                <img src="https://lacbuu.com/wp-content/uploads/2024/06/sup-bao-ngu-vi-ca-gia-bao-nhieu.jpg" alt="">
+            <div class=" col-md-4 mb-4 catergory  ">
+                <div class="w-100 overflow-hidden" style="border-radius: 12px;">
+                    <img class="zoom-in " src="https://lacbuu.com/wp-content/uploads/2022/06/Lau-BN-Hai-Sam-Nho-500x500.jpg" alt="">
+                </div>
                 <div class="py-3 font-weight-bolder text-black display-6" style="font-family: Faculty Glyphic;">Món lẩu</div>
-                <p>Không dùng chung với gừng, hành lá. Dùng thong thả, từ từ để cảm nhận mùi thơm của cốm non trong từng muỗng cháo.</p>   
+                <p>3 cách thưởng thức – 3 tầng hương vị</p>   
             </div>
-            <div class=" col-md-4 mb-4 zoom-in catergory">
-                <img src="https://lacbuu.com/wp-content/uploads/2024/06/sup-bao-ngu-vi-ca-gia-bao-nhieu.jpg" alt="">
+            <div class=" col-md-4 mb-4 catergory  ">
+                <div class="w-100 overflow-hidden" style="border-radius: 12px;">
+                    <img class="zoom-in " src="https://lacbuu.com/wp-content/uploads/2024/01/ga-ac-bao-ngu0tiem-thuoc-bac-1-500x500.jpg" alt="" style="object-fit: contain;">
+                </div>
                 <div class="py-3 font-weight-bolder text-black display-6" style="font-family: Faculty Glyphic;">Set tự nấu</div>
-                <p>Không dùng chung với gừng, hành lá. Dùng thong thả, từ từ để cảm nhận mùi thơm của cốm non trong từng muỗng cháo.</p>   
+                <p>Thành phần tương tự các món ăn liền, đã được chế biến nêm nếm gia vị hoàn thiện đến 95%. Khi ăn chỉ cần nấu sôi lại</p>   
             </div>
         </div>
     </div>
@@ -114,14 +117,14 @@ require_once("banner.php")
         </div>
     </div>
 </section> -->
-<section class="p-5  display-1"style="background-color: #E5E5E5;">
+<section class="p-5 ">
     <div class="container ">
         <div class="d-flex w-100 flex-column align-items-center mb-5">
-            <p class="card-title h3  ">Cách đặt hàng</p>
+            <div class="card-title display-6 text-black font-weight-bolder" style="font-family: Faculty Glyphic;">Cách đặt hàng</div>
             <div class="" style="height: 5px; width: 40px; background-color: red;"></div>
         </div>
-        <div class="row   custom-animation fade-up">
-            <div class="col-sm-6 col-lg-3  mb-4 d-flex  ">
+        <div class="row custom-animation fade-up">
+            <div class="col-sm-6 col-lg-3 mb-4 d-flex">
                 <div class="px-4 py-4 card shadow">
                     <i class="display-5 bi bi-card-checklist "></i>
                     <p class="card-title ">Chọn Gói Ăn</p>
@@ -131,7 +134,7 @@ require_once("banner.php")
             <div class="col-sm-6 col-lg-3  mb-4 d-flex">
                 <div class="px-4 py-4 card shadow">
                     <i class="display-5 bi bi-cookie "></i>
-                    <p class="card-title ">Fitfood nấu</p>
+                    <p class="card-title ">Lạc Bửu nấu</p>
                     <p class="lh-lg" style="font-size: 14px; font-family: monospace">Chúng tôi lựa chọn những nguyên liệu tốt nhất và nấu trong bếp công nghiệp hiện đại</p>
                 </div>
             </div>
@@ -139,7 +142,7 @@ require_once("banner.php")
                 <div class="px-4 py-4 card shadow">
                     <i class="display-5 bi bi-truck "></i>
                     <p class="card-title ">Giao hàng</p>
-                    <p class="lh-lg" style="font-size: 14px; font-family: monospace">Đội ngũ giao hàng của Fitfood sẽ giao tận nơi các phần ăn cho bạn mỗi ngày</p>
+                    <p class="lh-lg" style="font-size: 14px; font-family: monospace">Đội ngũ giao hàng của Lạc Bửu sẽ giao tận nơi các phần ăn cho bạn mỗi ngày</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3  mb-4 d-flex">
@@ -154,9 +157,9 @@ require_once("banner.php")
 </section>
 
 
-<section class="p-5" style="background-color: #E5E5E5;">
+<section class="p-5" >
     <div class="container">
-        <div class="d-flex  flex-column align-items-center mb-5">
+        <div class="d-flex  flex-column align-items-center mb-5" style="font-family: Faculty Glyphic;" >
             <p class="h1 ">CHUNG TAY BẢO VỆ</p>
             <p class="h1 font-weight-bold text-black">MÔI TRƯỜNG</p>
             <div class="" style="height: 10px; width: 60px; background-color: red;"></div>
@@ -180,7 +183,7 @@ require_once("banner.php")
             <div class="col-md-10 col-lg-4 mb-4 d-flex" >
                 <div class="px-4 py-4 d-flex flex-column ">
                     <img src="https://fitfood.vn/img/346x288/uploads/dsc04263-15668117777881.JPG" alt="">
-                    <p class="lh-lg mt-lg-3 mt-md-2 w-100" style="font-size: 14px; font-family: monospace">Fitfood chỉ cung cấp 01 bộ muỗng nĩa mỗi ngày để giảm thiểu rác thải nhựa</p>
+                    <p class="lh-lg mt-lg-3 mt-md-2 w-100" style="font-size: 14px; font-family: monospace">Lạc Bửu chỉ cung cấp 01 bộ muỗng nĩa mỗi ngày để giảm thiểu rác thải nhựa</p>
                 </div>
             </div>
             
@@ -245,9 +248,9 @@ require_once("banner.php")
 <section style="background-color: #E5E5E5;">
     <div class="container text-center " >
         <h2 class="font-weight-bold text-black">Khách hàng</h2>
-        <p class="pb-2">Fitfood tự hào là lựa chọn ưu tiên hàng đầu của các doanh nghiệp lớn trong và ngoài nước
+        <p class="pb-2">Lạc Bửu tự hào là lựa chọn ưu tiên hàng đầu của các doanh nghiệp lớn trong và ngoài nước
                     <br>(Click vào logo để xem hình ảnh thực tế sự kiện)
-                    <br>Liên hệ business@fitfood.vn để đặt tiệc ngay</p>
+                    <br>Liên hệ business@lacbuu.vn để đặt tiệc ngay</p>
         <div class="row">
             <div class="col-1"></div>
             <div class="col-2"><img src="https://fitfood.vn/img/160x0/images/logo-loreal-viet-nam-den-transparent-1-17185159878491.png" alt=""></div>
@@ -307,3 +310,42 @@ require_once("banner.php")
 include_once("mvc/views/client/quickview.php");
 ?> -->
 <!-- quick view end -->
+ <script>
+    $( document ).ready(function() {
+        let slider1 = $('.slider-1').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+            }
+        })
+        let slider2 = $('.slider-2').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+            }
+        })
+    }   
+);
+</script>

@@ -52,6 +52,7 @@ class App{
 
             //Client flow
             else{
+                //Controller handle
                 if (file_exists("./mvc/controllers/".ucwords($arrayURL[0])."Controller.php")) {
                     $this->controller = ucwords($arrayURL[0])."Controller";
                     require_once "./mvc/controllers/".$this->controller.".php";
